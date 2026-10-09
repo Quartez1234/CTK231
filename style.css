@@ -1,52 +1,290 @@
-/* Anything between these two tags will be ignored by the browser */
+body {
 
-h1 {
-    color: red;
+    background-color: #cccccc;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin: 0;
+
 }
 
-/*
+.container {
+
+    width: 90%;
+
+    max-width: 1000px;
+
+    margin: 30px auto;
+
+    border: 4px solid #0033cc;
+
+    background-color: #ffffee;
+
+}
+
+/* Blue header */
+
+header {
+
+    background: linear-gradient(#0066ff, #003399);
+
+    padding: 20px;
+
+}
+
+header h1 {
+
+    margin: 0;
+
+    font-size: 28px;
+
+    font-weight: normal;
+
+    font-style: italic;
+
+}
+
+header h1 a {
+
+    color: #00ccff;
+
+    text-decoration: none;
+
+}
+
+/* Blue navigation bar */
+
+nav {
+
+    display: flex;
+
+    background: linear-gradient(#0066ff, #003399);
+
+}
+
+nav a {
+
+    width: 25%;
+
+    padding: 12px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #002266;
+
+    color: #00ccff;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+}
+
+nav a:hover {
+
+    background-color: #ffff00;
+
+    color: #003399;
+
+}
+
+/* Main content */
+
+main {
+
+    display: flex;
+
+    align-items: stretch;
+
+    background-color: #ffffee;
+
+}
+
+h2 {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 18px;
+
+    font-weight: normal;
+
+    color: #003366;
+
+    border-bottom: 2px solid #666666;
+
+    padding-bottom: 6px;
+
+    margin-top: 0;
+
+}
+
 p {
-    color: #ff3366;
-    background-color: #00ff00;
-}
-*/
-.GameDesigner {
-     color: blue;
-     background-color: #ff0000;
-}
 
-#GameID {
-    color: green;
-    background-color: #ffff33f9;
-}
-.orangebg {
-    background-color: orange;
-}
-.spanstyle {
-    color:blue;
+    font-family: Georgia, serif;
+
+    font-size: 12px;
+
+    line-height: 1.25;
+
 }
 
 a {
-    color:#ff0000
+
+    color: #990033;
+
+}
+
+.left-column {
+
+    width: 35%;
+
+    padding: 12px;
+
+    box-sizing: border-box;
+
+    background-color: #99dddd;
+
+}
+
+.right-column {
+
+    width: 65%;
+
+    padding: 12px;
+
+    box-sizing: border-box;
+
+}
+
+.left-column h2 a {
+
+    color: #003366;
+
     text-decoration: none;
+
 }
 
-a:link {
-    color:#00ff00:
-}
-a:visited {
-    color:#0000ff;
+.right-column img {
+
+    width: 48%;
+
+    height: auto;
+
+    float: left;
+
+    margin: 0 12px 8px 0;
+
 }
 
-a:active {
-    color:#00ffff
+.right-column p {
+    overflow: auto;
 }
 
-a:hover {
-    color:#ff00ff;
-    text-decoration: underline;
-}
+/* Red ISU footer */
 
 footer {
-    background-color: green;
+
+    background-color: #cc0000;
+
+    border-top: 4px solid #0033cc;
+
+    padding: 15px;
+
+    min-height: 70px;
+
+}
+
+footer img {
+
+    width: 250px;
+
+    max-width: 100%;
+
+    height: auto;
+
+    display: block;
+
+}
+
+/* Keep the layout usable on small screens */
+
+@media (max-width: 600px) {
+
+    .container {
+
+        width: 95%;
+
+    }
+
+    main {
+
+        display: block;
+
+    }
+
+    .left-column,
+
+    .right-column {
+
+        width: 100%;
+
+    }
+
+    
+    nav a {
+ padding: 8px 4px;
+font-size: 12px;
+    }
+}
+
+
+main.gallery {
+    display: flex;
+    align-items: flex-start;
+    background-color: #ffffee;
+    padding: 10px;
+    gap: 12px;
+}
+
+.gallery-column {
+    width: 33.333%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+.gallery-column h2 {
+    margin-bottom: 10px;
+}
+
+.gallery-column img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.gallery-column p {
+    font-family: Georgia, serif;
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+/* Keep gallery columns usable on smaller screens */
+@media (max-width: 600px) {
+    main.gallery {
+        flex-direction: column;
+    }
+
+    .gallery-column {
+        width: 100%;
+    }
+
+    .gallery-column img {
+        width: 199%;
+        height: 300px;
+        object-fit: contain;
+        display: block;
+        margin-bottom: 10px;
+    }
 }
