@@ -1,0 +1,220 @@
+/* MAIN PAGE */
+body {
+    background-color: #0b0b0f;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* 1200 PIXEL GRID */
+#wrapper {
+    width: 1200px;
+    max-width: calc(100% - 48px);
+    margin: 30px auto;
+    padding: 24px;
+    box-sizing: border-box;
+    border: 1px solid #8b5cf6;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+}
+
+/* HEADER */
+header {
+    grid-column: 1 / 13;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    color: #a855f7;
+    font-size: 32px;
+}
+
+/* NAVIGATION */
+nav {
+    margin-top: 20px;
+    padding: 15px;
+    border-top: 1px solid #8b5cf6;
+    border-bottom: 1px solid #8b5cf6;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 17px;
+}
+
+nav a:hover {
+    color: #a855f7;
+}
+
+/* MAIN CONTENT */
+main {
+    grid-column: 1 / 13;
+    text-align: center;
+}
+
+/* WELCOME SECTION */
+#home {
+    padding: 30px 10px;
+}
+
+#home h2 {
+    color: #a855f7;
+    font-size: 30px;
+}
+
+#home h3 {
+    font-size: 22px;
+}
+
+/* FEATURED GAME DESIGN */
+.featured {
+    border: 2px solid #8b5cf6;
+    background-color: #171321;
+    padding: 45px;
+    margin: 30px auto;
+    width: 65%;
+    min-height: 100px;
+    box-sizing: border-box;
+}
+
+.featured h3 {
+    color: #c084fc;
+}
+
+/* EXPLORE BUTTON */
+.button {
+    display: inline-block;
+    background-color: #8b5cf6;
+    color: white;
+    padding: 14px 30px;
+    text-decoration: none;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #a855f7;
+}
+
+/* ARTWORK AND VIDEOS BOXES */
+.catergories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 35px auto;
+}
+
+.catergory {
+  border: 2px solid #8b5cf6;
+  background-color: #171321'
+  width: 220px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing; border-box;
+}
+
+
+.category h3 {
+    color: white;
+}
+
+/* ABOUT SECTION */
+#about {
+    padding: 35px;
+    border-top: 1px solid #8b5cf6;
+    margin-top: 30px;
+}
+
+#about h2 {
+    color: #a855f7;
+}
+
+/* CONTACT SECTION */
+#contact {
+    padding: 25px;
+}
+
+#contact h2 {
+    color: #a855f7;
+}
+
+.catergories {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  margin: 40px auto;
+}
+
+.category {
+  display: flex;
+  jutify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 120px;
+  border: 2px solid #8b5cf6;
+  background-color: #171321;
+  box-sizing: border-box;
+}
+
+.category h3 {
+  color: white;
+  text-align: center;
+}
+
+.categories {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    margin: 40px auto;
+}
+
+.category {
+    width: 220px !important;
+    height: 120px !important;
+    border: 2px solid #8b5cf6 !important;
+    background-color: #171321;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+.category h3 {
+    color: white;
+    text-align: center;
+}
+
+.featured img {
+  width: 80%;
+  max-width: 450px;
+  height: 200px;
+  object-fit: cover;
+  border: 2px solid #8b5cf6;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.category {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.catergory:hover {
+  background-color: #302044;
+  border-color: #c084fc;
+}
